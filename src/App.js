@@ -1,4 +1,5 @@
 import Cabecalho from "./componentes/Cabecalho";
+import Botao from "./componentes/Botao";
 import Sidebar from "./componentes/Sidebar";
 
 import  './css/base/reset.css'
@@ -11,15 +12,15 @@ function App() {
     <>
       <Cabecalho />
 
-      <div className="container-app">
+      <div className={ app_styles.containerApp }>
         <Sidebar />
 
         <main>
           <div>
 
-            <h2>Requisitos</h2>
+            <h2 >Requisitos</h2>
 
-            <button>Adicionar</button>
+            <Botao>Adicionar</Botao>
           </div>
 
           <div>

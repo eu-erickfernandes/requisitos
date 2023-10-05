@@ -17,4 +17,5 @@
 
     .cabecalho__logo{
         height: 2rem;
+        display: none;
     }

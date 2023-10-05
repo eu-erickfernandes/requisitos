@@ -1,0 +1,43 @@
+/* Estilização da Sidebar */
+
+.sidebar{
+    background-color: hsl(0, 0%, 100%);
+    width: 240px;
+}
+
+.navegacao__lista{
+
+    
+    & li{
+        align-items: center;
+        box-sizing: border-box;
+        color: hsl(0, 0%, 25%);
+        display: flex;
+        gap: .5rem;
+        transition: .5s;
+
+        &:hover{
+            background-color: hsl(0, 0%, 95%);
+            color: hsl(0, 0%, 0%);
+        }
+
+        &.modulo{
+            
+            cursor: pointer;
+            font-weight: 500;
+            padding: 1rem 2rem 1rem 1rem;
+        }
+
+        &.modulo::before{
+            aspect-ratio: 1;
+            background-color: hsl(215, 70%, 50%);
+            border-radius: 100vw;
+            content: '';
+            
+            display: block;
+            width: .5rem;
+        }
+
+        
+    }
+}
