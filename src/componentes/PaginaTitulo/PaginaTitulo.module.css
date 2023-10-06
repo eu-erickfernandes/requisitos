@@ -1,0 +1,13 @@
+/* Estilização do componente do container que recebe o titulo de uma página */
+
+.containerTitulo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.paginaTitulo{
+    color: var(--cor-texto-preto);
+    font-size: 1.25rem;
+    font-weight: var(--texto-regular);
+}

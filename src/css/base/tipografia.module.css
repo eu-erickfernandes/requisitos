@@ -5,3 +5,16 @@
 body, body *{
     font-family: 'Poppins', system-ui, sans-serif;
 }
+
+:root{
+    /* Variáveis para peso de texto */
+    --texto-regular: 400;
+    --texto-medio: 500;
+    --texto-negrito: 600;
+
+    /* Variáveis para tamanho de texto */
+    --texto-12: .75rem;
+    --texto-16: 1rem;
+    --texto-20: 1.25rem;
+    --texto-24: 1.5rem;
+}

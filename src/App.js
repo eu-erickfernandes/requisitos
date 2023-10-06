@@ -3,9 +3,11 @@ import Botao from "./componentes/Botao";
 import Sidebar from "./componentes/Sidebar";
 
 import  './css/base/reset.css'
-import tipografia_styles from './css/base/tipografia.module.css'
+import './css/base/tipografia.module.css'
+import './css/base/cores.module.css'
 
 import app_styles from './App.module.css'
+import PaginaTitulo from "./componentes/PaginaTitulo";
 
 function App() {
   return (
@@ -16,12 +18,9 @@ function App() {
         <Sidebar />
 
         <main>
-          <div>
-
-            <h2 >Requisitos</h2>
-
+          <PaginaTitulo titulo="Requisitos">
             <Botao>Adicionar</Botao>
-          </div>
+          </PaginaTitulo>
 
           <div>
 

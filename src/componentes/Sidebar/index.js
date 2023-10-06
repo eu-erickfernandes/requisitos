@@ -4,11 +4,32 @@ const Sidebar = () => {
     return (
         <aside className={ styles.sidebar }>
             <nav className={ styles.sidebar__navegacao }>
+                <details className={ styles.navegacao__dropdown }>
+                    <summary>Usuário</summary>
+
+                    <nav>
+                        <ul>
+                            <li>Perfil</li>
+                            <li>Sair</li>
+                        </ul>
+                    </nav>
+                </details>
+
+                <details className={ styles.navegacao__dropdown }>
+                    <summary>Sistema</summary>
+
+                    <nav>
+                        <ul>
+                            <li className={ styles.ativo }>Convênios</li>
+                            <li>PPA</li>
+                            <li>Operações de Crédito</li>
+                        </ul>
+                    </nav>
+                </details>
+
                 <ul className={ styles.navegacao__lista }>
-                    {/* <li>Usuário</li>
-                    <li>Sistema</li>
-                    <li>Módulos</li> */}
-                    <li className={ styles.modulo }>Requisitos</li>
+                    <li className={ styles.secao }>Módulos</li>
+                    <li className={ `${styles.modulo} ${styles.ativo}` }>Requisitos</li> 
                 </ul>
             </nav>
         </aside>

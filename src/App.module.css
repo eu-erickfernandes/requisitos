@@ -5,7 +5,7 @@ html, body{
 }
 
 body{
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--cor-fundo);
 }
 
 div:has(.containerApp){
@@ -18,10 +18,10 @@ div:has(.containerApp){
 .containerApp{
     display: flex;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 main{
-    /* background-color: hsl(200, 25%, 80%); */
     flex-grow: 1;
     padding: 1.5rem;
 }

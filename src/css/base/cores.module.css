@@ -1,1 +1,27 @@
 /* Estilos e variáveis globais de cores da aplicação */
+
+:root{
+    /* Variáveis genéricas para cores */
+
+    --cor-azul: hsl(215, 70%, 50%);
+    --cor-branco: hsl(0, 0%, 100%);
+
+    --cor-cinza-70: hsl(0, 0%, 70%);
+    --cor-cinza-80: hsl(0, 0%, 80%);
+    --cor-cinza-90: hsl(0, 0%, 90%);
+    --cor-cinza-95: hsl(0, 0%, 95%);
+
+    --cor-preto: hsl(0, 0%, 0%);
+    --cor-preto-25: hsl(0, 0%, 25%);
+    --cor-preto-40: hsl(0, 0%, 40%);
+
+    /* Variáveis de cores para componentes */
+    --cor-fundo: var(--cor-cinza-95);
+    --cor-surface: var(--cor-branco);
+
+    --cor-primaria: var(--cor-azul);
+
+    /* Variáveis de cores para texto */
+    --cor-texto-azul: var(--cor-azul);
+    --cor-texto-preto: var(--cor-preto-25);
+}
