@@ -11,7 +11,6 @@ body{
 div:has(.containerApp){
     display: flex;
     flex-direction: column;
-    
     min-height: 100%;
 }
 
@@ -22,6 +21,9 @@ div:has(.containerApp){
 }
 
 main{
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    gap: 1.5rem;
     padding: 1.5rem;
 }

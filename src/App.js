@@ -1,13 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Cabecalho from "./componentes/Cabecalho";
-import Botao from "./componentes/Botao";
 import Sidebar from "./componentes/Sidebar";
 
-import  './css/base/reset.css'
-import './css/base/tipografia.module.css'
-import './css/base/cores.module.css'
+import  './assets/css/base/reset.css'
+import './assets/css/base/tipografia.module.css'
+import './assets/css/base/cores.module.css'
 
 import app_styles from './App.module.css'
-import PaginaTitulo from "./componentes/PaginaTitulo";
+import Requisitos from "./pages/Requisitos";
+import RequisitoFormulario from "./pages/RequisitoFormulario";
 
 function App() {
   return (
@@ -15,17 +17,14 @@ function App() {
       <Cabecalho />
 
       <div className={ app_styles.containerApp }>
-        <Sidebar />
+        <BrowserRouter>
+            <Sidebar />
 
-        <main>
-          <PaginaTitulo titulo="Requisitos">
-            <Botao>Adicionar</Botao>
-          </PaginaTitulo>
-
-          <div>
-
-          </div>
-        </main>
+            <Routes>
+              <Route index element={ <Requisitos/> }></Route>  
+              <Route path="/requisito_formulario" element={ <RequisitoFormulario/> }></Route>  
+            </Routes>        
+        </BrowserRouter>
       </div>
     </>
   );

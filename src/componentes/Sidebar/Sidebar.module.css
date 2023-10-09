@@ -10,13 +10,9 @@
         align-items: center;
         display: flex;
         font-size: 1rem;
+        gap: .5rem;
         padding: 1rem;
         transition: .5s;
-
-        &:not(.secao):hover{
-            background-color: var(--cor-cinza-95);
-            color: var(--cor-preto);
-        }
 
         &.secao{
             color: var(--cor-cinza-70);
@@ -24,8 +20,27 @@
             text-transform: uppercase;
         }
 
-        &.modulo{
+        &:is(li){
             cursor: pointer;
+        }
+
+        &:not(.secao):hover{
+            background-color: var(--cor-cinza-95);
+            color: var(--cor-preto);
+
+            & .icone path{
+                fill: var(--cor-preto);
+            }
+        }
+
+        & .icone {
+            height: auto;
+            width: 1rem;
+    
+            & path{
+                fill: var(--cor-preto-25);
+                transition: .5s;
+            }
         }
     }
 
@@ -39,6 +54,12 @@
 
     & summary{
         justify-content: space-between;
+
+        & .dropdown__titulo{
+            align-items: center;
+            display: flex;
+            gap: .5rem;
+        }
 
         &::after{
             aspect-ratio: 1;
@@ -70,54 +91,3 @@
     }
     
 }
-
-/*
-
-.navegacao__lista{
-    & li{
-        box-sizing: border-box;
-        font-size: 1rem;
-        font-weight: var(--texto-regular);
-        gap: .5rem;
-        
-
-        &.secao{
-            color: var(--cor-cinza-70);
-            font-weight: var(--texto-medio);
-            text-transform: uppercase;
-        }
-
-        &.modulo{
-            cursor: pointer;
-            padding-inline: 1rem 2rem;
-        }
-
-        &.modulo::before{
-            aspect-ratio: 1;
-            background-color: var(--cor-azul);
-            border-radius: 100vw;
-            content: '';
-            display: block;
-            width: .5rem;
-        }
-    }
-}
-
-.navegacao__dropdown{
-    
-
-    & summary{
-        align-items: center;
-        box-sizing: border-box;
-        color: var(--cor-preto-25);
-        display: flex;
-        font-size: 1rem;
-        font-weight: var(--texto-regular);
-        gap: .5rem;
-        padding: 1rem;        
-        transition: .5s; 
-        
-        display: flex;
-        padding: 1rem;
-    }
-} */
