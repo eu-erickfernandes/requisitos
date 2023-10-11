@@ -1,0 +1,7 @@
+/* Estilização dos formulários da aplicação */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

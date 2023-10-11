@@ -1,0 +1,25 @@
+/* Estilização dos grupos de labels e inputs */
+
+.grupo{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input, .textarea{
+    border: 1px solid var(--cor-cinza-70);
+    border-radius: .25rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: .5rem;
+    outline: 0;
+    transition: .5s;
+
+    &:is(:focus, :hover){
+        border-color: var(--cor-preto-40);
+    }
+}
+
+.textarea{
+    min-height: 7rem;
+}

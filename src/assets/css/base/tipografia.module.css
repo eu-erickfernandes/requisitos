@@ -18,3 +18,7 @@ body, body *{
     --texto-20: 1.25rem;
     --texto-24: 1.5rem;
 }
+
+b{
+    font-weight: var(--texto-medio);
+}

@@ -2,7 +2,7 @@
 
 .cabecalho{
     align-items: center;
-    background-color: var(--cor-preto-25);
+    background-color: var(--cor-azul);
     border-bottom: 1px solid var(--cor-cinza-80);
     display: flex;
     height: 4rem;

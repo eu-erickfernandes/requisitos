@@ -1,0 +1,7 @@
+.tabelaRequisito{
+    & .descricao{
+        line-height: 150%;
+        text-align: justify;
+        white-space: initial;
+    }
+}

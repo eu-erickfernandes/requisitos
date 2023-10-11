@@ -1,0 +1,38 @@
+/* Estilização global das tabelas da aplicação */
+
+.tabela{
+    border-radius: .5rem;
+    box-shadow: 0px 0px 4px #C1C1C1;
+    font-size: .75rem;
+    overflow: hidden;
+
+    & tbody{
+        & tr:nth-child(odd){
+            background-color: var(--cor-cinza-95);
+        }
+    }
+
+    &:not(.noHover) tbody{
+        & tr:hover{
+            background-color: var(--cor-cinza-90);
+        }
+    }
+
+    & tr{
+        background-color: var(--cor-surface);
+
+        & th{
+            font-weight: var(--texto-medio);
+        }
+
+        & th, & td{
+            box-sizing: border-box;
+            max-width: 30ch;
+            padding: 1rem;
+            overflow: hidden;
+            text-align: left;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

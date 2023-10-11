@@ -3,7 +3,7 @@
 :root{
     /* Variáveis genéricas para cores */
 
-    --cor-azul: hsl(215, 70%, 50%);
+    --cor-azul: hsl(215, 70%, 45%);
     --cor-branco: hsl(0, 0%, 100%);
 
     --cor-cinza-70: hsl(0, 0%, 70%);

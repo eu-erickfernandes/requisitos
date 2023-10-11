@@ -10,6 +10,7 @@ import './assets/css/base/cores.module.css'
 import app_styles from './App.module.css'
 import Requisitos from "./pages/Requisitos";
 import RequisitoFormulario from "./pages/RequisitoFormulario";
+import Requisito from "./pages/Requisito";
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
             <Sidebar />
 
             <Routes>
-              <Route index element={ <Requisitos/> }></Route>  
-              <Route path="/requisito_formulario" element={ <RequisitoFormulario/> }></Route>  
+              <Route index element={ <Requisitos/> } />  
+              <Route path="/requisito_formulario" element={ <RequisitoFormulario/> } />  
+              <Route path="/requisito/:id" element={ <Requisito/> } />
             </Routes>        
         </BrowserRouter>
       </div>
