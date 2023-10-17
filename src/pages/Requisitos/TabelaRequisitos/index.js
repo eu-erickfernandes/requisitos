@@ -28,7 +28,6 @@ const TabelaRequisitos = () => {
                     <th>Validação</th>
                     <th>Previsão</th>
                     <th>Homologação</th>
-                    <th>Conclusão</th>
                     <th>Desenvolvedor</th>
                 </tr>
             </thead>
@@ -49,7 +48,6 @@ const TabelaRequisitos = () => {
                         <td>{ requisito.validacao ? requisito.validacao : '-' }</td>
                         <td>{ requisito.previsao ? requisito.previsao : '-' }</td>
                         <td>{ requisito.homologacao ? requisito.homologacao : '-' }</td>
-                        <td>{ requisito.conclusao ? requisito.conclusao : '-' }</td>
                         <td>{ requisito.desenvolvedor ? requisito.desenvolvedor : '-' }</td>
                     </tr>
                 )) }

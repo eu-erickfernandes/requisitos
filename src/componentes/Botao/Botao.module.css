@@ -1,7 +1,7 @@
 /* Estilização dos botões da aplicação */
 
 .botao{
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-azul);
     border: none;
     border-radius: .5rem;
     color: var(--cor-branco);
@@ -10,5 +10,10 @@
     font-weight: var(--texto-medio);
     padding-block: .5rem;
     padding-inline: 2rem;
+    transition: .5s;
     width: fit-content;
+
+    &:hover{
+        background-color: var(--cor-azul-hover);
+    }
 }

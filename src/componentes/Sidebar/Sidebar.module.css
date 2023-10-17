@@ -45,7 +45,7 @@
     }
 
     & .ativo{
-        border-left: 2px solid var(--cor-primaria);
+        border-left: 2px solid var(--cor-azul);
     }
 }
 

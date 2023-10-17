@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Botao from '../../componentes/Botao'
 import PaginaTitulo from '../../componentes/PaginaTitulo'
 import Surface from '../../componentes/Surface'
@@ -6,6 +7,8 @@ import Input from '../../componentes/Input'
 import Formulario from '../../componentes/Formulario'
 
 const RequisitoFormulario = () => {
+    const navigate = useNavigate()
+
     const [titulo, setTitulo] = useState('')
     const [descricao, setDescricao] = useState('')
 
@@ -26,7 +29,7 @@ const RequisitoFormulario = () => {
             titulo: titulo,
             descricao: descricao,
             criacao: new Date().toLocaleDateString(),
-            status: 'Backlog'
+            status: 'Pendente'
         }
 
         try{
@@ -51,6 +54,7 @@ const RequisitoFormulario = () => {
     const handleSubmit = (evento) => {
         evento.preventDefault()
         cadastraRequisito()
+        navigate('/')
     }
 
     return(

@@ -11,24 +11,24 @@ import app_styles from './App.module.css'
 import Requisitos from "./pages/Requisitos";
 import RequisitoFormulario from "./pages/RequisitoFormulario";
 import Requisito from "./pages/Requisito";
+import Teste from "./pages/Teste";
 
 function App() {
   return (
-    <>
-      <Cabecalho />
+      <BrowserRouter>
+        <Cabecalho />
 
-      <div className={ app_styles.containerApp }>
-        <BrowserRouter>
-            <Sidebar />
+        <div className={ app_styles.containerApp }>
+              <Sidebar />
 
-            <Routes>
-              <Route index element={ <Requisitos/> } />  
-              <Route path="/requisito_formulario" element={ <RequisitoFormulario/> } />  
-              <Route path="/requisito/:id" element={ <Requisito/> } />
-            </Routes>        
-        </BrowserRouter>
-      </div>
-    </>
+              <Routes>
+                <Route index element={ <Requisitos/> } />  
+                <Route path="/teste" element={ <Teste/> } />  
+                <Route path="/requisito_formulario" element={ <RequisitoFormulario/> } />  
+                <Route path="/requisito/:id" element={ <Requisito/> } />
+              </Routes>        
+        </div>
+      </BrowserRouter>
   );
 }
 

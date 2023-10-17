@@ -4,6 +4,8 @@
     /* Variáveis genéricas para cores */
 
     --cor-azul: hsl(215, 70%, 45%);
+    --cor-azul-hover: hsl(215, 70%, 55%);
+
     --cor-branco: hsl(0, 0%, 100%);
 
     --cor-cinza-70: hsl(0, 0%, 70%);
@@ -18,8 +20,6 @@
     /* Variáveis de cores para componentes */
     --cor-fundo: var(--cor-cinza-95);
     --cor-surface: var(--cor-branco);
-
-    --cor-primaria: var(--cor-azul);
 
     /* Variáveis de cores para texto */
     --cor-texto-azul: var(--cor-azul);
